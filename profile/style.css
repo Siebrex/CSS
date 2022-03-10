@@ -1,0 +1,42 @@
+body{
+    background-color: #2f2f6dc7;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#cabecalho{
+    color: white;  
+     
+}
+.h1{
+    border: 2px;
+    border-style:double;
+    display: flex;
+    justify-content: center;
+    animation-name: mudacor;
+    animation-duration: 3s;
+}
+
+@keyframes mudacor{
+    from{ color: #FA7C75;}
+    to{ color: white;} 
+}
+
+.h2{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+
+}
+
+#corpo{
+    display: flex;
+    justify-content:center;
+    color: white;
+
+}
+a{
+    color: #DEC65B;
+}
