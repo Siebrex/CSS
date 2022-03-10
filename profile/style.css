@@ -26,10 +26,6 @@ body{
     justify-content: center;
 }
 
-div{
-    text-align: center;
-
-}
 
 #corpo{
     display: flex;
