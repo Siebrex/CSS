@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.h2{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    color: rebeccapurple;
+    margin-bottom: 20px;
+    border: 2px;
+    border-style: double;
+}
+
+
+.top10:nth-child(odd){
+    color: #DB5737;
+    
+}
+
+footer{
+    margin-top: 40px;
+}
