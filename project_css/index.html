@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/200ef58e3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200;1,500&display=swap" rel="stylesheet">
+    <title>Jade Siebra</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="js" alt="logo">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Siebrex">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/85999996800">wahtsapp</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:jadesiebra@outlook.com">email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Jade Siebra</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    I am graduated in law school, but now i am currently learning HTML, CSS and JavaScript and intend to become web developer, probably front end.
+                </p>
+                <h4>
+                    Previous Studies:
+                </h4>
+                <p>
+                    <ul>
+                        <li>HTML5 and CSS3 course: basic module - 40hrs. curso em vídeo</li>
+                        <li>Git und Github course. curso em vídeo</li>
+                        <li>Basic JavaScript course. Rocketseat</li>
+                        <li>Picpro project: HTML, CSS and JavaScript: basic- 30 hrs</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>leave your contact</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="your email :)">
+                    <button>send!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

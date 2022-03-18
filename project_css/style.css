@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body{
+    background:url(./pexels-jakub-novacek-924824.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 1px 1px 10px 1px #a09038;
+    margin-bottom: 50px;
+}
+
+header ul li{
+    padding: 10px;
+}
+
+header ul li a:hover{
+    color: #c0a717;
+    text-decoration: underline;
+}
+
+header ul{
+    display: flex;
+}
+
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 46px;
+}
+
+.container .name h5{
+    font-size: 18px;
+}
+
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite; 
+    
+}
+@keyframes blink{
+    to{
+        visibility: hidden;
+    } 
+}
+
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.form{
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c0a717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition:  all 300ms ease-out;
+    border-radius: 0px 5px 5px 5px;
+    margin-top: 8px;
+    margin-left: -2px;
+}
+.form button:hover{
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30 px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
